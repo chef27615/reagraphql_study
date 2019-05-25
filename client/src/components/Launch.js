@@ -49,7 +49,22 @@ export class Launch extends Component {
                                 return(
                                   <div>
                                     <h1>Mission: {mission_name}</h1>
-                                </div>  
+                                    <h4>Mission details</h4>
+                                    <ul>
+                                        <li>flight_number: {flight_number}</li>
+                                        <li>launch_year: {launch_year}</li>
+                                        <li>launch_date_local: {launch_date_local}</li>
+                                        <li>launch_success: {launch_success ? 'yes' : 'no'}</li>
+                                    </ul>
+                                    <h4>Rocket Details</h4>
+                                    <ul>
+                                        <li>Rocket ID: {rocket_id}</li>
+                                        <li>Rocket name: {rocket_name}</li>
+                                        <li>Rocket type: {rocket_type}</li>
+                                    </ul>
+                                    <hr/>
+                                    <Link to="/">Back</Link> 
+                                </div>
                                 )
                             }
                         }
